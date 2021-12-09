@@ -1,4 +1,7 @@
-apply plugin: 'java'
+plugins {
+	id 'java'
+    id 'jacoco'
+}
 
 repositories {
     mavenCentral()
@@ -13,6 +16,4 @@ test {
     outputs.upToDateWhen { false }
 }
 
-plugins {
-    id 'jacoco'
-}
+
